@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            width: 800px;
+            margin: 0 auto;
+            font-family: "Verdana", sans-serif;
+            font-size: 11pt;
+        }
+
+        h1 {
+            text-align: center;
+            font-size: 16pt;
+            margin-bottom: 20px;
+        }
+
+        p,
+        li,
+        div {
+            margin: 0;
+        }
+
+        h2 {
+            font-size: 14pt;
+            margin-top: 20px;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .right-align {
+            text-align: right;
+        }
+
+        .underline {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <div class="container">
+
+        <h1>DISBURSEMENT REQUEST FORM</h1>
+
+        <p class="right-align">Date: {{date}}</p>
+        <p class="right-align">Place: {{place}}</p>
+
+        <p>To</p>
+
+        <h3>DMI Finance Pvt Ltd.</h3>
+
+        <p>Dear Sir,</p>
+
+        <h3>Sub: Request for Disbursement of my LAS Loan a/c no <u>{{applicationId}}</u></h3>
+        <p>
+            I/We have been sanctioned an LAS loan by your NBFC. I/We request you to kindly disburse the amount as per below
+            details.
+        </p>
+
+        <h3 class="underline">Loan details</h3>
+        <p>Sanctioned amount: ₹ {{sanctionedAmount}}/-</p>
+        <br>
+        <p>Interest Rate: {{interestRate}}</p>
+        <br>
+        <p>I/We request you to kindly disburse the amount of Rs. ₹ {{trancheAmount}}/-</p>
+        <br>
+        <p>(Rupees {{trancheAmountInWords}}) I /We request you to kindly transfer the amount in my account as below:</p>
+        <br>
+        <p>Name of Bank: {{bankName}}</p>
+        <br>
+        <p>IFSC: {{IFSC}}</p>
+        <br>
+        <p>Bank Account Number: {{accountNo}}</p>
+        <br>
+        <p>I /We request you to kindly deduct EMI / Pre-EMI (as applicable) on the 5th of every month.</p>
+        <br>
+        <br>
+        <P>Yours faithfully,</p>
+        <br>
+        <p>({{borrowerName}})</p>
+        <br>
+        <br>
+        <br>
+        <br>
+        I (the “Borrower”), do hereby confirm and certify that:
+        <ol>
+            <li><p>This drawdown certificate is furnished pursuant to the terms of the loan agreement <br>executed, inter alia, between the Borrower, KNAB Finance Advisors Private Limited (“Security <br>Trustee”), and DMI Finance Private Limited (“Lender”) (hereinafter referred to as the <br>“Agreement”).</p></li>
+            <br>
+            <li><p>Unless otherwise defined herein, all capitalized terms used herein have the meanings assigned to<br>those
+            terms in the Agreement.</p></li>
+            <br>
+            <li><p>The Borrower hereby irrevocably requests from the Lender the Drawdown Amount out of the Facility to the bank account of the Borrower as notified by the Borrower in the Agreement and on the Technology Platform.</p></li>
+            <br>   
+            <li><p>The Borrower hereby certifies that the following statements are true on the date hereof and the acceptance by the Borrower of the Drawdown Amount shall constitute a representation and warranty by the Borrower to the Lender that as of the date of such drawdown:</p></li>
+            <br>
+                <ol type = "a">
+                    <li><p>all representations and warranties of the Borrower in the Transaction Document executed between the Borrower, Security Trustee and/ or the Lender in regard to the Facility are true and correct in all respects and are valid as of date hereof;</p></li>
+                    <br>
+                    <li><p>that the Borrower is in compliance with all provisions of the Transaction Documents to which he is expressed to be a party;</p></li>
+                    <br>
+                    <li><p>no Event of Default has occurred or continuing under any Transaction Document, which has not been cured in terms of the Transaction Document;</p></li>
+                    <br>
+                    <li><p>there are no legal proceedings pending anywhere regarding the effectiveness or validity of the Transaction Documents or Security created under the Transaction Documents and/ or there has not occurred any event that would restrict, directly or indirectly, the Borrower’s power, authority or ability to perform any Transaction Document;</p></li>
+                    <br>
+                    <li><p>the Margin is / will be maintained at the level required under Transaction Documents, both prior to and after the requested Drawdown Amount; and </p></li>
+                    <br>
+                    <li><p>there is no other event in existence that is likely to have a Material Adverse Change.</p></li>
+                </ol>    
+                <br>
+            <li>
+                <p>The Borrower hereby confirms and represents that Security required to be created under any Transaction Document prior to the drawdown has been created in accordance with such Transaction Document.</p>
+                <br>
+                <p>The Borrower by making a request for a drawdown from his loan account created on the Technology Platform and sharing the one-time password (OTP) confirms that the Borrower has duly read and understood and irrevocably agreed with the terms and conditions mentioned herein and availed the Facility. The Borrower shall exempt the Lender, Security Trustee and/or Lending Service Provider from, any and all, responsibility/ liability which may arise on account of unauthorized access to the loan account of the Borrower.</p>
+                <br>
+                <p>The Borrower hereby acknowledges and accepts that on receipt of the OTP, access code or other forms of secure authentication, the Lender and/or Lending Service Provider shall assume that such authentication has been provided by the Borrower and it is the sole responsibility of the Borrower to ensure that the OTP, access code or other forms of secure authentication is not compromised or shared with any unauthorized users.</p>
+                <br>
+                <p>By sharing the OTP, the Borrower confirms that the Lender is agreeing to undertake such transaction based on instructions given by the Borrower and the Lender, Security Trustee and/or Lending Service Provider are not bound to check the accuracy and the authenticity of instructions and the Lender, Security Trustee and/or Lending Service Provider accept no liability for the consequences arising out thereof.</p>
+                <br>
+                <p>No other/further act, deed, or writing on part of the Borrower shall be required for acceptance by the Borrower as above including any different or physical signature for this certificate.</p>
+                <br>
+            </li>
+            <br>  
+        </ol>
+
+    </div>
+
+
+
+
+</body>
+
+</html>
